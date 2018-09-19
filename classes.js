@@ -8,6 +8,10 @@ function start () {
   one()
 
   two()
+
+  three()
+
+  makeVisible()
     
   
 }
@@ -25,6 +29,12 @@ function two () {
   two.classList.add('green')
 }
 
-// CREATE FUNCTION three HERE
+function three () {
+  var three = document.getElementById('three')
+  three.classList.add('orange')
+}
 
-// CREATE FUNCTION makeVisible HERE
+function makeVisible () {
+  var makeVisible = document.getElementsByClassName('invisible')[0]
+  makeVisible.classList.add('visible')
+}
